@@ -1,0 +1,21 @@
+{
+  "ConditionExpression": "attribute_not_exists(odometer)",
+  "Item": {
+    "id": {
+      "S": "4863E27A-EC53-4EBD-B427-4CF6B2006DFF"
+    },
+    "odometer": {
+      "N": "23566"
+    },
+    "date": {
+      "S": "2017-04-16"
+    },
+    "gallons": {
+      "N": "7.338"
+    },
+    "mpg": {
+      "N": "36.66"
+    }
+  },
+  "TableName": "mileage"
+}
