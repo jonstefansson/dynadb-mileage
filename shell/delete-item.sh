@@ -6,11 +6,11 @@ source "${script_dir}/base.sh"
 read -r -d '' json <<EOF
 {
   "Key": {
-    "id": {
-      "S": "4863E27A-EC53-4EBD-B427-4CF6B2006DFF"
+    "vehicle": {
+      "S": "Honda Fit"
     },
     "odometer": {
-      "N": "23566"
+      "N": "25528"
     }
   },
   "TableName": "mileage"

@@ -11,14 +11,15 @@ ddb query --cli-input-json '
       "S": "Honda Fit"
     },
     ":v2": {
-      "N": "24400"
+      "N": "25000"
     }
   },
   "ExpressionAttributeNames": {"#dt": "date"},
-  "ProjectionExpression": "#dt,odometer,mpg",
+  "ProjectionExpression": "#dt,vehicle,odometer,mpg,note",
   "ConsistentRead": false,
-  "Limit": 1,
+  "Limit": 25,
   "ScanIndexForward": false,
   "TableName": "mileage"
 }
-'
+' | jq '.'
+# jq '.Items[0]'
