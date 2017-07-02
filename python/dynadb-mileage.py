@@ -96,7 +96,8 @@ def load_csv():
             time.sleep(1)
 
 def query(odometer):
-    """Queries database for all records with an odometer reading greater than odometer"""
+    """Queries database for all records with an odometer reading greater than odometer
+    Usage: python dynadb-mileage.py query 25000"""
     try:
         result = dynamodb().query(
             TableName='mileage',
@@ -128,7 +129,7 @@ def query(odometer):
         print(e)
 
 
-if __file__ == sys.argv[0]:
+if __name__ == '__main__':
     command = sys.argv.pop(1)
     if command == 'load':
         load()
