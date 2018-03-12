@@ -1,8 +1,4 @@
 #!/bin/bash
-# -----------------------------------------------------------------------------
-# Always source this file (do not execute it). It needs to change current 
-# shell that you are working in.
-# -----------------------------------------------------------------------------
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 if [[ ! -d "$script_dir/venv" ]]; then
