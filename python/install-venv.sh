@@ -6,7 +6,7 @@
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 if [[ ! -d "$script_dir/venv" ]]; then
-    virtualenv "$script_dir/venv"
+    virtualenv --python=python3.6 "$script_dir/venv"
     echo "export PYTHONPATH=$script_dir" >> $script_dir/venv/bin/activate
 fi
 source venv/bin/activate
