@@ -62,3 +62,59 @@ This is what the Lambda function event looks like for a GET request.
   "isBase64Encoded": false
 }
 ```
+
+Here's a POST request event:
+
+```json
+{
+  "resource": "/{proxy+}",
+  "path": "/mileage",
+  "httpMethod": "POST",
+  "headers": {
+    "accept": "application/json",
+    "content-type": "application/json; charset=utf-8",
+    "Host": "775f4i6l7i.execute-api.us-east-1.amazonaws.com",
+    "User-Agent": "curl/7.54.0",
+    "X-Amzn-Trace-Id": "Root=1-5aad8a2b-206694ed42af9a6699bb4a0b",
+    "x-api-key": "eSd3RRbOckaeu2bJn6HD79Lt6CUGnjf93mzgwnpx",
+    "X-Forwarded-For": "71.83.153.49",
+    "X-Forwarded-Port": "443",
+    "X-Forwarded-Proto": "https"
+  },
+  "queryStringParameters": null,
+  "pathParameters": {
+    "proxy": "mileage"
+  },
+  "stageVariables": null,
+  "requestContext": {
+    "requestTime": "17/Mar/2018:21:35:39 +0000",
+    "path": "/prod/mileage",
+    "accountId": "557516168365",
+    "protocol": "HTTP/1.1",
+    "resourceId": "9n0x1a",
+    "stage": "prod",
+    "requestTimeEpoch": 1521322539248,
+    "requestId": "22e95fb4-2a2b-11e8-a0ae-db08620ce1a1",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "cognitoIdentityId": null,
+      "apiKey": "eSd3RRbOckaeu2bJn6HD79Lt6CUGnjf93mzgwnpx",
+      "cognitoAuthenticationType": null,
+      "userArn": null,
+      "apiKeyId": "n2xnxga958",
+      "userAgent": "curl/7.54.0",
+      "accountId": null,
+      "caller": null,
+      "sourceIp": "71.83.153.49",
+      "accessKey": null,
+      "cognitoAuthenticationProvider": null,
+      "user": null
+    },
+    "resourcePath": "/{proxy+}",
+    "httpMethod": "POST",
+    "apiId": "775f4i6l7i"
+  },
+  "body": "{ \"Fillups\": [ { \"Odometer\": 32462, \"Date\": \"03/09/2018\", \"Gallons\": 7.808, \"Trip\": 266.9, \"Note\": \"\" } ]}",
+  "isBase64Encoded": false
+}
+```
